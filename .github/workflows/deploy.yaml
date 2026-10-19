@@ -24,7 +24,7 @@ jobs:
     strategy:
       matrix:
         include:
-          - environment: ${{ inputs.environment != '' && inputs.environment || 'prod' }}
+          - environment: ${{ inputs.environment != '' && inputs.environment || 'test' }}
 
     environment: ${{ matrix.environment }}
     env:
