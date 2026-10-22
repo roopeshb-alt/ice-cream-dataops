@@ -10,17 +10,18 @@ environment:
 variables:
   modules:
     bootcamp:
+      # Variables shared by modules
       icapi_ds_external_id: ds_icapi
       icapi_space_name: icapi_dm_space
 
       data_foundation:
         data_developer_source_id: ${DATA_DEVELOPER_SOURCE_ID}
-
+        
       ice_cream_api:
         icapi_extractors_source_id: ${ICAPI_EXTRACTORS_SOURCE_ID}
         tokenUri: ${IDP_TOKEN_URL}
         cdfProjectName: ${CDF_PROJECT}
-        scopes: "https://westeurope-1.cognitedata.com/.default"
+        scopes: ${IDP_SCOPES}
         icapi_trigger_client_id: ${ICAPI_EXTRACTORS_CLIENT_ID}
         icapi_trigger_client_secret: ${ICAPI_EXTRACTORS_CLIENT_SECRET}
         icapi_extractors_client_id: ${ICAPI_EXTRACTORS_CLIENT_ID}
